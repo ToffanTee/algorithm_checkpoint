@@ -1,0 +1,22 @@
+ALGORITHM algorithm_checkpoint
+VAR
+    sentCount : INTEGER := 0
+    wordCount : INTEGER := 0
+    vowelCount : INTEGER := 0
+    sentence : STRING[N]
+BEGIN
+    FOR i FROM 0 TO N STEP 1  DO
+        IF (vowels.includes(sentence[i])) THEN
+            vowelCount += 1
+        END_IF
+        IF (sentence[i] == " ") THEN
+            wordCount += 1
+            sentCount = sentCount
+        ELSE
+            sentCount += 1
+        END_IF
+    END_FOR
+    write(vowelCount)
+    write(wordCount)
+    write(sentCount)
+END
