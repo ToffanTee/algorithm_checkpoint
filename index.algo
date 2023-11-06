@@ -4,6 +4,7 @@ VAR
     wordCount : INTEGER := 0
     vowelCount : INTEGER := 0
     sentence : STRING[N]
+    vowels: STRING[N] := "aeiou"
 BEGIN
     FOR i FROM 0 TO N STEP 1  DO
         IF (vowels.includes(sentence[i])) THEN
